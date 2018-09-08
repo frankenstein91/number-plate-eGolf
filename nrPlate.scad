@@ -1,6 +1,6 @@
 car = "eGolf";
 carnumber = 987654;
-difference() {
+union() difference() {
 union(){
 union() {
 linear_extrude(height = 1){
