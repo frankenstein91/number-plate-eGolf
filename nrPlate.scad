@@ -11,7 +11,7 @@ translate(v = [0.3, -10, 0]){
 translate(v = [-1, -13, -2]){
         color([1,0,0]) minkowski(){
         cube([105,26,2]);
-        cylinder(r=2,h=.01,$fn=100);
+        cylinder(r=2,h=.01,$fn=300);
         }
 }
 }
@@ -27,7 +27,7 @@ union(){
                 cube([4,7,1]);
         }
         translate(v = [7,.5,0]){
-                cylinder(h = 1, r1 = 3.5, r2 = 3.5,$fn=100);
+                cylinder(h = 1, r1 = 3.5, r2 = 3.5,$fn=300);
         }
 //        Kabel
         translate(v = [10,-4,0]) {
@@ -51,12 +51,12 @@ union(){
 module sector(h, d, a1, a2) {
     if (a2 - a1 > 180) {
         difference() {
-            cylinder(h=h, d=d,$fn=100);
+            cylinder(h=h, d=d,$fn=300);
             translate([0,0,-0.5]) sector(h+1, d+1, a2-360, a1); 
         }
     } else {
         difference() {
-            cylinder(h=h, d=d,$fn=100);
+            cylinder(h=h, d=d,$fn=300);
             rotate([0,0,a1]) translate([-d/2, -d/2, -0.5])
                 cube([d, d/2, h+1]);
             rotate([0,0,a2]) translate([-d/2, 0, -0.5])
