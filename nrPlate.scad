@@ -9,7 +9,10 @@ translate(v = [0.3, -10, 0]){
 }
 }
 translate(v = [-1, -13, -2]){
-        color([1,0,0]) cube([105,26,2]);
+        color([1,0,0]) minkowski(){
+        cube([105,26,2]);
+        cylinder(r=2,h=.01,$fn=100);
+        }
 }
 }
 translate(v = [35,5,0]){
