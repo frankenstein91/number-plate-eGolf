@@ -37,8 +37,8 @@ union(){
                 }
                 translate(v = [7.67,4.7,0]) rotate([0, 0, 180]) {
                 difference() {
-                sector(1, 10, 30, 90);
-                translate(v = [0,0,-1]) sector(4, 8, 29, 92);
+                sector(1, 10, 30, 147);
+                translate(v = [0,0,-1]) sector(4, 8, 29, 200);
                 }
         }
 
