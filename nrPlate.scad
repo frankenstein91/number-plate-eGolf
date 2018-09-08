@@ -1,5 +1,6 @@
 car = "eGolf";
 carnumber = 987654;
+difference() {
 union(){
 union() {
 linear_extrude(height = 1){
@@ -45,6 +46,12 @@ union(){
         }
 }
 }
+}
+
+translate([3,9,-2.7]) cylinder(h=1, d=6.7,$fn=300);
+translate([3,-9,-2.7]) cylinder(h=1, d=6.7,$fn=300);
+translate([100,9,-2.7]) cylinder(h=1, d=6.7,$fn=300);
+translate([100,-9,-2.7]) cylinder(h=1, d=6.7,$fn=300);
 }
 
 //https://gist.github.com/plumbum/78e3c8281e1c031601456df2aa8e37c6
